@@ -12,7 +12,7 @@ body {
   width: 100%;
   overflow: hidden;
   background-color: #f0f0f0; /* Color de fondo (¡Cámbialo si quieres!) */
-  padding: 12px 0;
+  padding: 14px 0;
   border-top: 1px solid #ddd; /* Ejemplo de borde */
   border-bottom: 1px solid #ddd; /* Ejemplo de borde */
   box-sizing: border-box;
@@ -21,7 +21,7 @@ body {
 .marquee-content {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee-scroll 45s linear infinite; /* Ajusta '30s' para velocidad */
+  animation: marquee-scroll 28s linear infinite; /* Ajusta '30s' para velocidad */
 }
 
 .marquee-text {
