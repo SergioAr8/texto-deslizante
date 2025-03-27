@@ -21,7 +21,7 @@ body {
 .marquee-content {
   display: inline-block;
   white-space: nowrap;
-  animation: marquee-scroll 30s linear infinite; /* Ajusta '30s' para velocidad */
+  animation: marquee-scroll 45s linear infinite; /* Ajusta '30s' para velocidad */
 }
 
 .marquee-text {
@@ -31,7 +31,7 @@ body {
   /* === ESTILOS ACTUALIZADOS === */
   font-family: 'Playfair Display', serif; /* Fuente cambiada, con 'serif' como respaldo */
   font-weight: 700; /* Peso Bold (Negrita). También puedes usar 'bold' */
-  font-size: 16px; /* Tamaño (Ajusta si es necesario) */
+  font-size: 20px; /* Tamaño (Ajusta si es necesario) */
   color: #000000; /* Color cambiado a negro */
   /* =========================== */
 }
