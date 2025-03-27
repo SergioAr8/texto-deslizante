@@ -1,46 +1,48 @@
+/* --- IMPORTANTE: Importar la fuente desde Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* --- Resto de los estilos --- */
 body {
-  margin: 0; /* Elimina márgenes predeterminados */
-  font-family: plyfair-display; /* Fuente básica */
+  margin: 0;
+  font-family: sans-serif; /* Fuente básica de respaldo */
   box-sizing: border-box;
 }
 
 .marquee-container {
-  width: 100%; /* Ocupa todo el ancho disponible */
-  overflow: hidden; /* Oculta el texto que se sale */
+  width: 100%;
+  overflow: hidden;
   background-color: #f0f0f0; /* Color de fondo (¡Cámbialo si quieres!) */
-  padding: 12px 0; /* Espaciado vertical */
-  border-top: 1px solid #ddd; /* Ejemplo de borde superior */
-  border-bottom: 1px solid #ddd; /* Ejemplo de borde inferior */
+  padding: 12px 0;
+  border-top: 1px solid #ddd; /* Ejemplo de borde */
+  border-bottom: 1px solid #ddd; /* Ejemplo de borde */
   box-sizing: border-box;
 }
 
 .marquee-content {
-  display: inline-block; /* Trata todo el contenido como un bloque */
-  white-space: nowrap; /* Evita que el texto salte de línea */
-  /* La animación: nombre, duración, tipo, repetición */
-  animation: marquee-scroll 30s linear infinite;
-  /* Ajusta '30s' para cambiar la velocidad: más segundos = más lento */
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-scroll 30s linear infinite; /* Ajusta '30s' para velocidad */
 }
 
 .marquee-text {
-  display: inline-block; /* Mantiene los spans en línea */
-  padding-right: 60px; /* Espacio entre las repeticiones del texto */
-  /* Estilos del texto */
-  font-size: 16px; /* Tamaño de letra (¡Cámbialo si quieres!) */
-  color: #000000; /* Color de texto (¡Cámbialo si quieres!) */
+  display: inline-block;
+  padding-right: 60px; /* Espacio entre repeticiones */
+
+  /* === ESTILOS ACTUALIZADOS === */
+  font-family: 'Playfair Display', serif; /* Fuente cambiada, con 'serif' como respaldo */
+  font-weight: 700; /* Peso Bold (Negrita). También puedes usar 'bold' */
+  font-size: 16px; /* Tamaño (Ajusta si es necesario) */
+  color: #000000; /* Color cambiado a negro */
+  /* =========================== */
 }
 
-/* Animación que mueve el contenido */
+/* Animación (sin cambios) */
 @keyframes marquee-scroll {
-  from {
-    transform: translateX(0%); /* Empieza en la posición normal */
-  }
-  to {
-    transform: translateX(-50%); /* Se mueve hacia la izquierda exactamente la mitad del ancho total (porque duplicamos el texto) */
-  }
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
 }
 
-/* Opcional: Pausar animación al pasar el mouse por encima */
+/* Pausar al pasar el mouse (sin cambios) */
 .marquee-container:hover .marquee-content {
   animation-play-state: paused;
 }
