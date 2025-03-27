@@ -27,7 +27,7 @@ body {
   padding-right: 60px; /* Espacio entre las repeticiones del texto */
   /* Estilos del texto */
   font-size: 16px; /* Tamaño de letra (¡Cámbialo si quieres!) */
-  color: #333; /* Color de texto (¡Cámbialo si quieres!) */
+  color: #000000; /* Color de texto (¡Cámbialo si quieres!) */
 }
 
 /* Animación que mueve el contenido */
