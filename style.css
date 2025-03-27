@@ -1,0 +1,46 @@
+body {
+  margin: 0; /* Elimina márgenes predeterminados */
+  font-family: sans-serif; /* Fuente básica */
+  box-sizing: border-box;
+}
+
+.marquee-container {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  overflow: hidden; /* Oculta el texto que se sale */
+  background-color: #f0f0f0; /* Color de fondo (¡Cámbialo si quieres!) */
+  padding: 12px 0; /* Espaciado vertical */
+  border-top: 1px solid #ddd; /* Ejemplo de borde superior */
+  border-bottom: 1px solid #ddd; /* Ejemplo de borde inferior */
+  box-sizing: border-box;
+}
+
+.marquee-content {
+  display: inline-block; /* Trata todo el contenido como un bloque */
+  white-space: nowrap; /* Evita que el texto salte de línea */
+  /* La animación: nombre, duración, tipo, repetición */
+  animation: marquee-scroll 30s linear infinite;
+  /* Ajusta '30s' para cambiar la velocidad: más segundos = más lento */
+}
+
+.marquee-text {
+  display: inline-block; /* Mantiene los spans en línea */
+  padding-right: 60px; /* Espacio entre las repeticiones del texto */
+  /* Estilos del texto */
+  font-size: 16px; /* Tamaño de letra (¡Cámbialo si quieres!) */
+  color: #333; /* Color de texto (¡Cámbialo si quieres!) */
+}
+
+/* Animación que mueve el contenido */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0%); /* Empieza en la posición normal */
+  }
+  to {
+    transform: translateX(-50%); /* Se mueve hacia la izquierda exactamente la mitad del ancho total (porque duplicamos el texto) */
+  }
+}
+
+/* Opcional: Pausar animación al pasar el mouse por encima */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
